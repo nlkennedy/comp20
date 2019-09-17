@@ -6,15 +6,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-body {
-    background-color: #f6d7d7;
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-.wrapper {
-    position: relative;
-    margin-left:auto;
-    margin-right:auto;
-    width: 100%;
+body {
+    background-color: #f6d7d7;
 }
 
 .placeholder {
