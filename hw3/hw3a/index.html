@@ -3,40 +3,66 @@
 <head>
 <meta charset="utf-8">
 <title>HTML 5 Doc</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<style>
-		body,html {padding: 0; margin: 0}
-		header h1 { text-align:center;
-		font-family: arial, helvetica;
-		font-size: 30px;
-		}
-		header {background-color: #878787;
-		color: #fff; padding: 20px 40px; width: 100%; box-sizing: border-box;}
-		
-		nav { background-color: #AD3DCB; padding: 15px 0;}
-		nav a {color: #fff; font-size: 19px; text-decoration: none;}
-		
-		nav ul {list-style-type:none; }
-		nav ul li {display: inline-block}
-	
+
 	</style>
 </head>
 <body>
 	<header>
-	<h1>Header</h1>
+		<h1>Header</h1>
 	</header>
 	<nav>
-	<ul>
-	<li><a href="#">Home</a></li>
-	<li><a href="#">Our Team</a></li>
-	<li><a href="#">Projects</a></li>
-	<li><a href="#">Contact</a></li>
-	<li>
-	<form>
-	<input type='text' name='search'>
-	<input type = 'submit' value = "Search">
-	</form>
-	</li>
-	</ul>
+		<ul>
+			<li class="nav-name"><a href="#">HOME</a></li>
+			<li class="nav-name"><a href="#">OUR TEAM</a></li>
+			<li class="nav-name"><a href="#">PROJECTS</a></li>
+			<li class="nav-name"><a href="#">CONTACT</a></li>
+			<li>
+				<form class="form">
+					<input class="submissionfield" type='text' placeholder='Search Query' name='Search Query'>
+					<input class="button" type='submit' value="Go!">
+				</form>
+			</li>
+		</ul>
 	</nav>
+
+	<section class="article">
+		<h2>Article Heading</h2>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</p>
+
+		<h3>Subsection</h3>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+		</p>
+		<p>
+			Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+		</p>
+
+		<h3>Another Subsection</h3>
+
+		<p>
+			Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+		</p>
+		<p>
+			Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+		</p>
+	</section>
+	<aside class="related">
+		<h2>Related</h2>
+		<ul>
+			<li><a class="list" href="#">Oh do I like to be beside the seaside</a></li>
+			<li><a class="list" href="#">Oh do I like to be beside the seaside</a></li>
+			<li><a class="list" href="#">Although in the North of New England</a></li>
+			<li><a class="list" href="#">It never stops raining</a></li>
+			<li><a class="list" href="#">Oh well...</a></li>
+		</ul>
+	</aside>
+
+	<p> Copyright </p>
 </body>
 </html>
