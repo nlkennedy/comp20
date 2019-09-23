@@ -1,0 +1,89 @@
+<?xml-stylesheet type="text/css" href="styles.css"?>
+
+<set_list>
+  <heading>Set List</heading>
+
+  <song>
+    <title>Title: Hooked on a Feeling</title>
+    <artist>Artist: Blue Swede</artist>
+    <genre>Genre: Pop</genre>
+    <year>Year: 1973</year>
+  </song>
+
+  <song>
+    <title>Title: Go All the Way </title>
+    <artist>Artist: The Raspberries</artist>
+    <genre>Genre: Pop</genre>
+    <year>Year: 1972</year>
+  </song>
+
+  <song>
+    <title>Title: Spirit in the Sky</title>
+    <artist>Artist: Norman Greenbaum</artist>
+    <genre>Genre: Pop</genre>
+    <year>Year: 2003</year>
+  </song>
+  
+  <song>
+    <title>Title: Moonage Daydream</title>
+    <artist>Artist: David Bowie</artist>
+    <genre>Genre: Rock</genre>
+    <year>Year: 1972</year>
+  </song>
+  
+  <song>
+    <title>Title: Fooled Around and Fell in Love</title>
+    <artist>Artist: Elvin Bishop</artist>
+    <genre>Genre: Rock</genre>
+    <year>Year: 2002</year>
+  </song>
+  
+  <song>
+    <title>Title: I'm Not in Love</title>
+    <artist>Artist: 10cc</artist>
+    <genre>Genre: Rock</genre>
+    <year>Year: 2002</year>
+  </song>
+  
+  <song>
+    <title>Title: I Want You Back</title>
+    <artist>Artist: The Jackson 5</artist>
+    <genre>Genre: Pop</genre>
+    <year>Year: 1995</year>
+  </song>
+
+  <song>
+    <title>Title: Come and Get Your Love</title>
+    <artist>Artist: Redbone</artist>
+    <genre>Genre: Rock</genre>
+    <year>Year: 2003</year>
+  </song>
+
+  <song>
+    <title>Title: Cherry Bomb</title>
+    <artist>Artist: The Runaways</artist>
+    <genre>Genre: Rock</genre>
+    <year>Year: 1976</year>
+  </song>
+
+  <song>
+    <title>Title: Escape (The Piña Colada Song)</title>
+    <artist>Artist: Rupert Holmes</artist>
+    <genre>Genre: Pop</genre>
+    <year>Year: 1979</year>
+  </song>
+
+  <song>
+    <title>Title: O-O-H Child</title>
+    <artist>Artist: The Five Stairsteps</artist>
+    <genre>Genre: Soul</genre>
+    <year>Year: 2001</year>
+  </song>
+
+  <song>
+    <title>Title: Ain't No Mountain High Enough</title>
+    <artist>Artist: Marvin, Tammi Terrell</artist>
+    <genre>Genre: Soul</genre>
+    <year>Year: 2005</year>
+  </song>
+</set_list>
