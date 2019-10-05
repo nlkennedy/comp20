@@ -46,6 +46,7 @@
     <h1>Quick Pick for Mass Lottery Lucky for Life</h1>
 
     <script language="javascript" type="text/javascript"> 
+      // display the quick pick
       nums_ans = new Array(rand(48), rand(48), rand(48), rand(48), rand(48));
       document.write("Balls: ");
       display(nums_ans);
@@ -59,6 +60,7 @@
       document.write("Lucky ball: " + lucky_ans + "<br>");
       document.write("<br>");
 
+      // display an array with spaces between elements
       function display(array) {
         for (i = 0; i < array.length; i++) {
           document.write(array[i] + " ");
@@ -66,10 +68,12 @@
         document.write("<br>");
       }
 
+      // return a random integer from 1 to max
       function rand(max) {
         return Math.round(Math.random() * max + 1);
       }
 
+      // get the input lottery numbers
       function parseInput() {
         lucky_input = document.getElementById("lucky").value;
         num_input = document.getElementById("five_num").value.split(" ");
@@ -81,6 +85,7 @@
         payout(num_input, lucky_input);
       }
 
+      // calculate how many lottery ball matches 
       function detect_matches(num_input) {
         num_match = 0;
 
@@ -95,9 +100,9 @@
         return num_match;
       }
 
+      // determine the lottery reward quantity and display
       function payout(num_input, lucky_input) {
         luck_match = (lucky_input == lucky_ans);
-
         num_match = detect_matches(num_input);
 
         if (luck_match) {
@@ -140,7 +145,7 @@
           }
         }
   
-        document.getElementById("result").innerHTML = "<h4>Result: <h4>" + "You won: " + text;
+        document.getElementById("result").innerHTML = "You won: " + text;
       }
     </script>
 
@@ -152,7 +157,8 @@
       <input class="button" type="button" onclick="parseInput()" value="Play"></input>
     </form>
 
-    <p id="result"></p>
+    <h4>Result: </h4>
+    <h3 id="result"></h3>
   </div>
 
 	<div id="divider"></div>
@@ -161,12 +167,13 @@
     <h1>Joe’s Hotdogs</h1>
 
     <script>
-    
+      // declare menu
       var menu = [];
       menu["hotdogs"] = 3.25;
       menu["fries"] = 2.00;
       menu["drinks"] = 1.50;
 
+      // get the input order quantities
       function getOrder() {
         var order = [];
         for (var i in menu) {
@@ -178,6 +185,7 @@
         calculateOrder(order);
       }
 
+      // calculate and display the order total 
       function calculateOrder(order) {
         // calculate costs
         var subtotal = 0;
@@ -192,8 +200,8 @@
           reduced -= discount;
         }
         
-        var tax = subtotal * 0.0625;
-        var total = subtotal + tax;
+        var tax = reduced * 0.0625;
+        var total = reduced + tax;
 
         // display costs
         document.getElementById("order_subtotal").innerHTML = "Subtotal: $" + subtotal.toFixed(2);
@@ -203,10 +211,9 @@
         document.getElementById("order_total").innerHTML = "$" + total.toFixed(2);
 
         // display quantities
-        for (var i in order) {
-          field = document.getElementById("order_" + i).innerHTML;
-          document.getElementById("order_" + i).innerHTML = field + order[i];
-        }
+        document.getElementById("order_hotdogs").innerHTML = "Hot Dogs: " + order["hotdogs"];
+        document.getElementById("order_fries").innerHTML = "Fries: " + order["fries"];
+        document.getElementById("order_drinks").innerHTML = "Drinks: " + order["drinks"];
       }
 
     </script>
