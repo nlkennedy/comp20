@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 6</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: #c99de2;
+            text-align: center;
+        }
+
+        .thumbnail {
+            height: 100px;
+            box-sizing: border-box;
+            margin: 5px;
+            border: solid;
+            border-color: #000000;
+        }
+
+        #gallery {
+            background-color: #ffffff;
+            margin-right: 25%;
+            margin-left: 25%;
+        }
+
+        #selected {
+            height: 300px;
+            box-sizing: border-box;
+            margin: 5px;
+            border: solid;
+            border-color: #000000;
+        }
+
+        .label {
+            display: inline-block;
+            margin: 0.5%;
+        }
+
+        #nametag {
+            border: solid;
+            border-color: #000000;
+            margin-left: 25%;
+            margin-right: 25%;
+            box-sizing: border-box;
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+        <div id="header">
+            <h1>Art Gallery</h1>
+            <h4>Hover over any piece of art to view a larger version. Click to see details.</h4>
+        </div>
+
+        <div id="main">
+            <div id="nametag">
+                <h3 class="label">Name: </h3>
+                <h3 class="label" id="title"></h3>
+                </br>
+                <h4 class="label">Price: </h4>
+                <h4 class="label" id="price">$</h4>
+            </div>
+        </div>
+        <div id="gallery"></div>
+        <div>
+            <img id="selected" src=''><img>
+        </div>
+    
+    <script language="javascript" src="art.js"></script>
+    <script language="javascript" type="text/javascript"> 
+        $("#selected").hide();
+
+        // initialize array of art objects
+        var works_of_art = [new Art("Grey Lines with Black, Blue and Yellow", 200), 
+            new Art("Heliconia, Crabs Claw Ginger", 500), 
+            new Art("Inside Red Canna", 300), 
+            new Art("Lake George Reflection", 400), 
+            new Art("Red Canna", 100), 
+        ];
+
+        // create gallery of thumbnail images in html
+        for (i in works_of_art) {
+            line = "<img class='thumbnail' id='" + works_of_art[i].name + "'src='images/" + works_of_art[i].image + "'><img>";
+            $("#gallery").append(line);
+        }
+
+        // add properties to each thumbnail with jQuery
+        $(".thumbnail").each(function() {
+            // fade in large image on mouse over
+            this.onmouseover = function() {
+                $("#selected").prop("src", this.src);
+                $("#selected").fadeIn();
+            };
+
+            // remove large image on mouse out
+            this.onmouseout = function() {
+                $("#selected").hide();
+            };
+
+            // on click, display art object information
+            this.onclick = function() {
+                // find the correct art object
+                target_id = this.id
+                target_index = works_of_art.findIndex(function(element) { 
+                    return (element.name === target_id);
+                });
+
+                // display art object information
+                $("#nametag").show();
+                $("#title").html(works_of_art[target_index].name);
+                $("#price").html("$" + works_of_art[target_index].price);
+                
+                // remove name tag after 5 seconds 
+                setTimeout(function() { $("#nametag").hide(); }, 5000);
+            };
+        });
+
+    </script>
+</body>
+</html>
