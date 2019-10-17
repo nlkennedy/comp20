@@ -70,7 +70,6 @@
             <img id="selected" src=''><img>
         </div>
     
-    <script language="javascript" src="art.js"></script>
     <script language="javascript" type="text/javascript"> 
         $("#selected").hide();
 
@@ -115,10 +114,30 @@
                 $("#price").html("$" + works_of_art[target_index].price);
                 
                 // remove name tag after 5 seconds 
-                setTimeout(function() { $("#nametag").hide(); }, 5000);
+                setTimeout(nametag_timing, 5000, target_id);
             };
         });
 
+        function Art(name, price) {
+            this.name = name;
+            this.price = price;
+            this.image = name + ".jpg";
+        }
+
+        // make sure that image is hidden only 5 sec after last image was clicked
+        function nametag_timing(target_id) {
+            if ($("#title").html() == target_id) {
+                $("#nametag").hide(); 
+            }
+        }
     </script>
 </body>
 </html>
+
+<!-- 
+Citations: 
+https://www.brainpickings.org/2018/11/15/georgia-okeeffe-flower/
+https://www.christies.com/features/Georgia-O-Keeffe-7330-1.aspx
+https://www.artmarketmonitor.com/2016/04/26/georgia-okeeffe-leads-christies-40m-may-american-sale/
+https://www.wnyc.org/story/georgia-okeeffes-tropical-period/ 
+-->
