@@ -1,0 +1,80 @@
+// set_list json object
+
+set_list = 
+{
+    "songs": 
+    [        
+        {
+            "title": "Hooked on a Feeling",
+            "artist": ["Blue Swede"],
+            "genre": ["Pop"],
+            "year": "1973"
+        },        
+        {
+            "title": "Go All the Way",
+            "artist": ["The Raspberries"],
+            "genre": ["Pop"],
+            "year": "1972"
+        },        
+        {
+            "title": "Spirit in the Sky",
+            "artist": ["Norman Greenbaum"],
+            "genre": ["Pop"],
+            "year": "2003"
+        },        
+        {
+            "title": "Moonage Daydream",
+            "artist": ["David Bowie"],
+                "genre": ["Rock"],
+            "year": "1972"
+        },        
+        {
+            "title": "Fooled Around and Fell in Love",
+            "artist": ["Elvin Bishop"],
+            "genre": ["Rock"],
+            "year": "2002"
+        },        
+        {
+            "title": "I'm Not in Love",
+            "artist": ["10cc"],
+            "genre": ["Rock"],
+            "year": "2002"
+        },        
+        {
+            "title": "I Want You Back",
+            "artist": ["The Jackson 5"],
+            "genre": ["Pop"],
+            "year": "1995"
+        },        
+        {
+            "title": "Come and Get Your Love",
+            "artist": ["Redbone"],
+            "genre": ["Rock"],
+            "year": "2003"
+        },        
+        {
+            "title": "Cherry Bomb",
+            "artist": ["The Runaways"],
+            "genre": ["Rock", "Pop"],
+            "year": "1976"
+        },        
+        {
+            "title": "Escape (The Piña Colada Song)",
+            "artist": ["Rupert Holmes"],
+            "genre": ["Pop"],
+            "year": "1979"
+        },        
+        {
+            "title": "O-O-H Child",
+            "artist": ["The Five Stairsteps"],
+            "genre": ["Soul"],
+            "year": "2001"
+        },        
+        {
+            "title": "Ain't No Mountain High Enough",
+            "artist": ["Marvin", "Tammi Terrell"],
+            "genre": ["Soul"],
+            "year": "2005"
+        }
+    ]
+}

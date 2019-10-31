@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script language="javascript" src="set_list.json"></script>
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="header">Set Lists</h1>
+
+        <!-- part 2 -->
+        <h2>Serialized Set List</h2>
+        <div id="serialize"></div>
+    </div>
+
+    <div class="row">
+        <!-- part 3 -->
+        <div class="column c1">
+            <h2>All Songs</h2>
+            <div id="all"></div>
+        </div>
+        <!-- part 4 -->
+        <div class="column c2">
+            <h2>Songs by Genre</h2>
+            <form>
+                <p>Select a genre of songs to display: </p>
+                <select id="genre_select" name="genre_select">
+                    <option value="">None</option>
+                </select>
+                <input class="button" type="button" onclick="update_list()" value="Submit"></input>
+            </form>
+            <div id="selected"></div>
+        </div>
+    </div>
+</body>
+</html>

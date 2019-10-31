@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 2%;
+    border: 0;
+    background-color: #87ceeb;
+}
+
+h3 {
+    margin: 0px;
+}
+
+div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.column {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 2%;
+    margin: 2%;
+    width: 46%;
+    background-color: #67bcdd;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#heading {
+    box-sizing: border-box;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin: 0 2%;
+    background-color: #67bcdd;
+
+}
+
+#header {
+    text-align: center;
+}
+
+select {
+    width: 20%;
+}
