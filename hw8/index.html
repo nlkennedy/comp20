@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script language="javascript" src="api.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Homework 8</title>
+</head>
+<body>
+    <h2>Quotes</h2>
+
+    <div id="welcome"></div>
+
+    <div>
+        <form>
+            <h4>Choose a category:</h4>
+            <select id="categories" name="categories"></select>
+            <input class="button" type="button" onclick="update_quote()" value="Submit"></input>
+        </form>
+    </div>
+
+    <div class="quoteblock">
+        <h3 id="title"></h3>
+        <p id="quote"></p>
+        <p class="author-cont">—<span id="author"></span></p>
+        <p class="tags-cont">Tags: <span id="tags"></span></p>
+    </div>
+
+    <p>Copyright: <span id="copy"></span></p>
+    <p>Note: There are a limited number of free API requests per hour.</p>
+
+    <div id="writeup">
+        <h3>Write Up</h3>
+        <p>Website Citation: <a href="https://theysaidso.com/api/" target="_blank">https://theysaidso.com/api/</a></p>
+        <p>API citation: <a href="https://quotes.rest/" target="_blank">https://quotes.rest/</a></p>
+        <p>
+            The TheySaidSo API is used to generate famous quotes. 
+            They have multiple categories of quotes, such as inspirational or sports quotes. 
+            They have a quote of the day, and a quote of the day for each category. 
+        </p>
+        <p>
+            I used the categories options for the API requests. 
+            Once a category is specified as a query string, the API will return the quote of the day from the specified category. 
+        </p>
+        <p>
+            There are multiple uses for this API, especially since it changes the quotes every day so that new content can be seen. 
+            First, it could be used on a sports blog to display a different sports quote every day, using the "sports" category. 
+            Second, it could be used in a professional setting for a job search website, since they also have a "management" category. 
+        </p>
+        <p>
+            A drawback of using this API (the free version), is that it allows a limited number of API calls per hour. 
+        </p>
+    </div>
+</body>
+</html>

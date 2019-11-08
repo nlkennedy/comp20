@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #9de2a3;
+    text-align: center;
+}
+
+.quoteblock {
+    margin: 3% 10%;
+    padding: 3% 10%;
+    background-color: #cecece;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
+}
+
+#quote::before {
+    content: '\201C';
+}
+
+#quote::after {
+    content: '\201D';
+}
+
+#quote {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 150%;
+}
+
+.author-cont {
+    font-size: 150%;
+}
+
+#writeup {
+    text-align: left;
+    margin: 3% 10%;
+    padding: 3% 10%;
+    background-color: #cecece;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
+}
